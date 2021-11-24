@@ -43,7 +43,7 @@ header{
 
             li{
                 display: inline-block;
-                line-height: 97px;
+                line-height: 77px;
                 padding: 10px;
                 
                 &.active{
