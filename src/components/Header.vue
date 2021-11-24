@@ -6,9 +6,9 @@
           </div>
           <nav>
               <ul>
-                  <li><a href="#">CHARACTERS</a></li>
-                  <li class="active"><a href="#">COMICS</a></li>
-                  <li><a href="#">MOVIES</a></li>
+                  <li v-for="link, i in links" :key="i" :class="link.here ? 'active' : '' ">
+                      <a  href="#">{{link.text}}</a>
+                  </li>
               </ul>
           </nav>
       </div>
@@ -18,6 +18,63 @@
 <script>
 export default {
   name: 'Header',
+  data(){
+      return{
+          links: [
+              {
+                  text: "CHARACTERS",
+                  url: "#",
+                  here: false
+              },
+              {
+                  text: "COMICS",
+                  url: "#",
+                  here: true
+              },
+              {
+                  text: "MOVIES",
+                  url: "#",
+                  here: false
+              },
+              {
+                  text: "TV",
+                  url: "#",
+                  here: false
+              },
+              {
+                  text: "GAMES",
+                  url: "#",
+                  here: false
+              },
+              {
+                  text: "COLLECTIBLES",
+                  url: "#",
+                  here: false
+              },
+              {
+                  text: "VIDEOS",
+                  url: "#",
+                  here: false
+              },
+              {
+                  text: "FANS",
+                  url: "#",
+                  here: false
+              },
+              {
+                  text: "NEWS",
+                  url: "#",
+                  here: false
+              },
+              {
+                  text: "SHOP",
+                  url: "#",
+                  here: false
+              },
+
+          ]
+      }
+  }
 }
 </script>
 
