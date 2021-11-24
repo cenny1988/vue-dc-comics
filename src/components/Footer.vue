@@ -15,94 +15,31 @@
                 <div class="column">
                     <h3>DC COMICS</h3>
                     <ul>
-                        <li>
-                            <a href="#">link</a>
-                        </li>
-                        <li>
-                            <a href="#">link</a>
-                        </li>
-                        <li>
-                            <a href="#">link</a>
-                        </li>
-                        <li>
-                            <a href="#">link</a>
-                        </li>
-                        <li>
-                            <a href="#">link</a>
-                        </li>
-                        <li>
-                            <a href="#">link</a>
-                        </li>
-                        <li>
-                            <a href="#">link</a>
+                        <li v-for="link, i in links[0].dcComics" :key="i">
+                            <a href="#">{{link}}</a>
                         </li>
                     </ul>
 
                     <h3>SHOP</h3>
                     <ul>
-                        <li>
-                            <a href="#">link</a>
-                        </li>
-                        <li>
-                            <a href="#">link</a>
+                        <li v-for="link, i in links[1].shops" :key="i">
+                            <a href="#">{{link}}</a>
                         </li>
                     </ul>
                 </div>
                 <div class="column">
                     <h3>DC</h3>
                     <ul>
-                        <li>
-                            <a href="#">link</a>
-                        </li>
-                        <li>
-                            <a href="#">link</a>
-                        </li>
-                        <li>
-                            <a href="#">link</a>
-                        </li>
-                        <li>
-                            <a href="#">link</a>
-                        </li>
-                        <li>
-                            <a href="#">link</a>
-                        </li>
-                        <li>
-                            <a href="#">link</a>
-                        </li>
-                        <li>
-                            <a href="#">link</a>
-                        </li>
-                        <li>
-                            <a href="#">link</a>
-                        </li>
-                        <li>
-                            <a href="#">link</a>
-                        </li>
-                        <li>
-                            <a href="#">link</a>
-                        </li>
-                        <li>
-                            <a href="#">link</a>
+                        <li v-for="link, i in links[2].dc" :key="i">
+                            <a href="#">{{link}}</a>
                         </li>
                     </ul>
                 </div>
                 <div class="column">
                     <h3>SITES</h3>
                     <ul>
-                        <li>
-                            <a href="#">link</a>
-                        </li>
-                        <li>
-                            <a href="#">link</a>
-                        </li>
-                        <li>
-                            <a href="#">link</a>
-                        </li>
-                        <li>
-                            <a href="#">link</a>
-                        </li>
-                        <li>
-                            <a href="#">link</a>
+                        <li v-for="link, i in links[3].sites" :key="i">
+                            <a href="#">{{link}}</a>
                         </li>
                     </ul>
                 </div>
@@ -159,7 +96,16 @@ export default {
           ],
           links:[
               {
-
+                dcComics:['Characters', 'Comics', 'Movies', 'TV', 'Games', 'Videos', 'News']
+              },
+              {
+                shops:['Shop DC', 'Shop DC Collectibles']
+              },
+              {
+                dc:['Teerms of Use', 'Privacy policy (New)', 'Ad Choices', 'Advertisig', 'Jobs', 'Subscriptions', 'Talent Workshops', 'CPSC Certificates', 'Ratings', 'Shop Help', 'Contact Us']
+              },
+              {
+                sites:['DC', 'MAD Magazine', 'DC Kids', 'DC Universe', 'DC Power Visa']
               },
           ]
       }
@@ -226,6 +172,9 @@ footer{
             justify-content: space-around;
             padding: 2rem 0;
 
+            .column{
+                margin-right: 1rem;
+            }
             h3{
                 padding: 1rem 0;
             }
