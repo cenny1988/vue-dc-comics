@@ -96,7 +96,10 @@ header{
             padding: 10px 0;
         }
         nav{
-            max-height: 100%;
+            ul{
+                display: flex;
+                justify-content: space-around;
+            }
 
             li{
                 display: inline-block;
