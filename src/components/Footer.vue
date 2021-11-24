@@ -140,12 +140,12 @@ footer{
                 color: #fff;
                 display: flex;
                 align-items: center;
-                justify-content: space-around;
+                // justify-content: space-around;
                 // flex-wrap: wrap;
                 min-width: 200px;
 
                 img{
-                    padding: 1rem;
+                    padding: .5rem;
                     height: 6rem;
                 }
                 h3{
@@ -166,14 +166,14 @@ footer{
         }
 
         #links{
-            width: calc(100% / 3);
+            width: calc(40%);
             padding: 1rem 0;
             display: flex;
-            justify-content: space-around;
+            // justify-content: space-around;
             padding: 2rem 0;
 
             .column{
-                margin-right: 1rem;
+                margin-right: 1.5rem;
             }
             h3{
                 padding: 1rem 0;
