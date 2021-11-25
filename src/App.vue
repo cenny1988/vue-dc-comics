@@ -5,6 +5,7 @@
     <Jumbotron/>
     <main>
       <div class="container">
+        <Carousel/>
       </div>
     </main>
 
@@ -16,6 +17,7 @@
 import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
 import Jumbotron from './components/Jumbotron.vue';
+import Carousel from '@/components/Carousel.vue';
 
 export default {
   name: 'App',
@@ -23,6 +25,7 @@ export default {
     Header,
     Footer,
     Jumbotron,
+    Carousel,
   }
 }
 </script>
@@ -40,11 +43,8 @@ export default {
   }
 
   main{
-    // debug
-    background-color: #000;
-    // min-height: 150px;
-    color: #fff;
-    line-height: 150px;
+    background-color: #1c1c1c;
+    padding: 2rem 0;
   }
 }
 </style>
