@@ -16,7 +16,7 @@
                     <h3>DC COMICS</h3>
                     <ul>
                         <li v-for="link, i in links[0].dcComics" :key="i">
-                            <a href="#">{{link}}</a>
+                            <a href="#">{{link.text}}</a>
                         </li>
                     </ul>
 
@@ -96,7 +96,36 @@ export default {
           ],
           links:[
               {
-                dcComics:['Characters', 'Comics', 'Movies', 'TV', 'Games', 'Videos', 'News']
+                dcComics:[
+                    {
+                        text: 'Characters',
+                        url: '#'
+                    },
+                    {
+                        text: 'Comics',
+                        url: '#'
+                    },
+                    {
+                        text: 'Movies',
+                        url: '#'
+                    },
+                    {
+                        text: 'TV',
+                        url: '#'
+                    },
+                    {
+                        text: 'Games',
+                        url: '#'
+                    },
+                    {
+                        text: 'Videos',
+                        url: '#'
+                    },
+                    {
+                        text: 'News',
+                        url: '#'
+                    }
+                ]
               },
               {
                 shops:['Shop DC', 'Shop DC Collectibles']
@@ -132,7 +161,7 @@ footer{
             display: flex;
             justify-content: space-around;
             align-items: center;
-            flex-wrap: wrap;
+            // flex-wrap: wrap;
 
             .container-icons{
                 width: calc(100% / 5);
@@ -188,6 +217,7 @@ footer{
                 
                 a{
                     color: #959595;
+                    font-size: .8rem;
                 }
             }
         }

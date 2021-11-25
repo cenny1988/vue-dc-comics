@@ -2,9 +2,9 @@
   <div id="app">
     <Header/>
 
+    <Jumbotron/>
     <main>
       <div class="container">
-        <h2> -- Content goes here -- </h2>
       </div>
     </main>
 
@@ -15,12 +15,14 @@
 <script>
 import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
+import Jumbotron from './components/Jumbotron.vue';
 
 export default {
   name: 'App',
   components: {
     Header,
     Footer,
+    Jumbotron,
   }
 }
 </script>
