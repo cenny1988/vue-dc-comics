@@ -109,13 +109,12 @@ header{
                 &.active{
                     border-bottom: #0c7cec 3px solid;
                     a{
-                        color: #0c7cec;
+                        color: #0c7cec!important;
                     }
                 }
 
                 a{
-                    text-decoration: none;
-                    color: #000;
+                    color: #000!important;
                 }
             }
         }

@@ -147,10 +147,10 @@ export default {
 footer{
     color: #fff;
     
-    a{
-        color: #fff;
-        text-decoration: none;
-    }
+    // a{
+    //     color: #fff;
+    //     text-decoration: none;
+    // }
     
     #cards{
         background-color: #0282f9;
@@ -231,11 +231,6 @@ footer{
             display: flex;
             justify-content: space-between;
             align-items: center;
-
-            .button{
-                border: #0282f9 1px solid;
-                padding: 1rem;
-            }
 
             span{
                 color: #0282f9;

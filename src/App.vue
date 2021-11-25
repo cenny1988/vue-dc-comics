@@ -44,7 +44,21 @@ export default {
 
   main{
     background-color: #1c1c1c;
-    padding: 2rem 0;
+    padding-bottom: 2rem;
+  }
+
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .button{
+    border: #0282f9 1px solid;
+    padding: 1rem;
+
+    &.btn-blue{
+      background-color: #0282f9;
+    }
   }
 }
 </style>

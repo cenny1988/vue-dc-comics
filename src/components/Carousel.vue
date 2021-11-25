@@ -1,7 +1,13 @@
 <template>
   <section>
+    <div id="currentseries">
+      <a href="#" class="button btn-blue">CURRENT SERIES</a>
+    </div>
     <div id="serieslist">
       <ThumbCard v-for="serie, i in series" :key="i" :details="serie"/>
+    </div>
+    <div id="loadmore">
+      <a href="#" class="button btn-blue">LOAD MORE</a>
     </div>
   </section>
 </template>
@@ -13,7 +19,7 @@ import ThumbCard from '@/components/ThumbCard.vue';
 export default {
   name: 'Carousel',
   components: {
-    ThumbCard,
+    ThumbCard
   },
   data(){
     return{
@@ -98,9 +104,21 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+#currentseries{
+  // padding: 3rem;
+}
 #serieslist{
+  padding-top: 2rem;
   display: flex;
   flex-wrap: wrap;
   color: #fff;
+}
+#loadmore{
+  text-align: center;
+  margin: 1rem 0;
+
+  a{
+    padding: 1rem 4rem;
+  }
 }
 </style>
