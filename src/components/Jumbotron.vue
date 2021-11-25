@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="jumbotron">
       
   </section>
 </template>
@@ -12,10 +12,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-section{
+#jumbotron{
     height: 400px;
     background-image: url('../assets/img/jumbotron.jpg');
-    
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 </style>

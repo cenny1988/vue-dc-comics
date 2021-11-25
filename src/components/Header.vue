@@ -96,26 +96,23 @@ header{
             padding: 10px 0;
         }
         nav{
-            ul{
-                display: flex;
-                justify-content: space-around;
-            }
-
             li{
                 display: inline-block;
-                line-height: 77px;
-                padding: 10px;
+                line-height: 81px;
+                padding: 8px;
+
+                a{
+                    color: #000!important;
+                    font-size: .9rem;
+                }
                 
-                &.active{
+                &.active, &:hover{
                     border-bottom: #0c7cec 3px solid;
                     a{
                         color: #0c7cec!important;
                     }
                 }
 
-                a{
-                    color: #000!important;
-                }
             }
         }
     }

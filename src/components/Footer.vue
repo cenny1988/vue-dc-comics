@@ -1,17 +1,20 @@
 <template>
 <footer>
-  <section id="cards">
-      <div class="container">
-          <div v-for="card, j in cards" :key="j" class="container-icons">
-              <img :src="require(`../assets/img/${card.image}`)" :alt="card.title">
-              <h3>{{card.title}}</h3>
-          </div>
-      </div>
-  </section>
+    <!-- cards cricate in dinamico con js -->
+    <section id="cards">
+        <div class="container">
+            <div v-for="card, j in cards" :key="j" class="container-icons">
+                <img :src="require(`../assets/img/${card.image}`)" :alt="card.title">
+                <h3>{{card.title}}</h3>
+            </div>
+        </div>
+    </section>
 
+    <!-- links caricati in dinamico -->
     <section id="footer-nav">
         <div class="container" id="bg-overlay">
             <div id="links">
+                <!-- questa colonna ha una struttura dati ad obj scelta per prova -->
                 <div class="column">
                     <h3>DC COMICS</h3>
                     <ul>
@@ -27,6 +30,7 @@
                         </li>
                     </ul>
                 </div>
+                <!-- queste altre 2 colonne hanno una struttura dati array di stringhe più semplice rispetto alla precedente -->
                 <div class="column">
                     <h3>DC</h3>
                     <ul>
@@ -47,6 +51,7 @@
         </div>
     </section>
 
+    <!-- questa parte è tutta statica rispetto alle precedenti -->
     <section id="footer-social">
         <div class="container">
             <div>
@@ -146,22 +151,15 @@ export default {
 <style scoped lang="scss">
 footer{
     color: #fff;
-    
-    // a{
-    //     color: #fff;
-    //     text-decoration: none;
-    // }
-    
     #cards{
         background-color: #0282f9;
         
         .container{
-            // min-height: 180px;
             padding: 1rem 0;
             display: flex;
             justify-content: space-around;
             align-items: center;
-            // flex-wrap: wrap;
+            flex-wrap: wrap;
 
             .container-icons{
                 width: calc(100% / 5);
@@ -169,9 +167,7 @@ footer{
                 color: #fff;
                 display: flex;
                 align-items: center;
-                // justify-content: space-around;
-                // flex-wrap: wrap;
-                min-width: 200px;
+                min-width: 180px;
 
                 img{
                     padding: .5rem;

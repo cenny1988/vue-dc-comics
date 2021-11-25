@@ -1,6 +1,6 @@
 <template>
   <div class="thumb">
-    <img :src="details.thumb" alt="details.series">
+    <a href="#"><img :src="details.thumb" alt="details.series"></a>
     <h4>{{details.series}}</h4>
   </div>
 </template>

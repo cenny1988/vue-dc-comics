@@ -31,12 +31,12 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-  *{
+*{
     margin: 0;
-    // padding: 0;
+    padding: 0;
     box-sizing: border-box;
   }
+#app {
   .container{
     width: 80%;
     margin: 0 auto;
@@ -52,6 +52,7 @@ export default {
     text-decoration: none;
   }
 
+  // classi btn inserite qui per poterle utilizzare in tutti i componenti
   .button{
     border: #0282f9 1px solid;
     padding: 1rem;

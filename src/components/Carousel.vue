@@ -1,11 +1,14 @@
 <template>
   <section>
+    <!-- button -->
     <div id="currentseries">
       <a href="#" class="button btn-blue">CURRENT SERIES</a>
     </div>
+    <!-- lista di thumb -->
     <div id="serieslist">
       <ThumbCard v-for="serie, i in series" :key="i" :details="serie"/>
     </div>
+    <!-- altro button -->
     <div id="loadmore">
       <a href="#" class="button btn-blue">LOAD MORE</a>
     </div>
