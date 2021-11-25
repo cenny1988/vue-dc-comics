@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header/>
+    <AppHeader/>
 
     <Jumbotron/>
     <main>
@@ -9,21 +9,21 @@
       </div>
     </main>
 
-    <Footer/>
+    <AppFooter/>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue';
-import Footer from './components/Footer.vue';
+import AppHeader from './components/AppHeader.vue';
+import AppFooter from './components/AppFooter.vue';
 import Jumbotron from './components/Jumbotron.vue';
 import Carousel from '@/components/Carousel.vue';
 
 export default {
   name: 'App',
   components: {
-    Header,
-    Footer,
+    AppHeader,
+    AppFooter,
     Jumbotron,
     Carousel,
   }

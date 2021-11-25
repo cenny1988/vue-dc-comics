@@ -74,7 +74,7 @@
 
 <script>
 export default {
-  name: 'Footer',
+  name: 'AppFooter',
   data(){
       return{
           cards:[
